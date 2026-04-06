@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(160, 116, 116);
+    box-shadow: 0px 0px 12px  rgb(0, 0, 0);
+}
+header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 70px;
+    margin-top: 10px;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border: none;
+    margin: none;
+    outline: none;
+    box-shadow: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: 1s;
+}
+header button:hover{
+    color: rgb(213, 196, 196);
+    box-shadow: 0px 0px 12px  rgb(255, 255, 255);
+}
+header img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-left: 12px;
+}
+
+
+#imo1{
+    width: 100%;
+    height: 650px;
+    margin-top: 2px;
+}
+marquee{
+    position:absolute;
+    top: 90px;
+    left: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 22px;
+    width: 400px;
+    height: 200px;
+    font-family: 'Courier New', Courier, monospace;
+
+} 
+footer{
+    width: 100%;
+    height: 12px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(160, 116, 116);
+    box-shadow: 0px 0px 40px  rgb(0, 0, 0);
+    margin-top: 3px;
+    position: absolute;
+    bottom: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #772424;
+}
+
+/* هذا الكود يجعل الصور والعناصر تتأقلم مع حجم الشاشة تلقائياً */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* لمنع ظهور شريط تمرير عرضي مزعج */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.main-footer {
+    background-color: rgb(160, 116, 116);
+    padding: 15px 0; /* تقليل الرقم الأول يرفع النص للأعلى */
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 0; /* إلغاء أي مسافة علوية خارجية */
+    box-shadow: 0px -5px 15px rgba(0,0,0,0.3); /* ظل خفيف من الأعلى ليعطي جمالية */
+}
+
+.main-footer p {
+    margin: 0 0 5px 0; /* تقليل المسافة تحت جملة الحقوق */
+    font-weight: bold;
+    color: black;
+}
+
+.main-footer address {
+    margin: 0;
+    font-style: normal;
+    font-size: 14px;
+    opacity: 0.9;
+    color: black;
+}
+/* كود خاص للهواتف والشاشات الصغيرة */
+@media screen and (max-width: 600px) {
+    
+    /* 1. تعديل الهيدر ليناسب الموبايل */
+    header {
+        height: auto; /* السماح للهيدر بالتمدد إذا نزلت العناصر تحت بعضها */
+        padding: 10px 0;
+    }
+
+    header img {
+        width: 50px; /* تصغير اللوجو قليلاً */
+        height: 50px;
+        float: none; /* إلغاء الطفو ليتوسط العناصر */
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    header button {
+        width: 90%; /* جعل الزر يأخذ معظم عرض الشاشة ليسهل الضغط عليه */
+        height: 50px;
+        margin: 5px auto;
+        font-size: 14px;
+    }
+
+    /* 2. تعديل النص المتحرك (Marquee) */
+    marquee {
+        position: static; /* إلغاء الـ absolute لكي لا يغطي الصور */
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    /* 3. تعديل الصورة الرئيسية */
+    #imo1 {
+        height: 300px; /* تقليل ارتفاع الصورة الكبيرة لكي لا تملأ شاشة الموبايل بالكامل */
+        object-fit: cover; /* لضمان عدم تشوه الصورة عند تصغيرها */
+    }
+
+    /* 4. تعديل القوائم (المشروبات والحلويات) */
+    #menu-section {
+        padding: 15px;
+    }
+
+    #menu-section h2 {
+        font-size: 1.2rem;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 12px 0; /* مسافة مريحة للمس بالاصبع */
+    }
+}
